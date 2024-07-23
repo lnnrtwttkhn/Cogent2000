@@ -1,0 +1,29 @@
+Cog2000 log file Mon May 13 10:47:29 2002
+GPrim v1.22 Compiled:Apr 30 2002 (GLib DirectDraw v7 Compiled:Apr 30 2002)
+Display:640x480x24 60.02Hz
+CogInput v1.04 Compiled: Apr  2 2002
+Attaching C:\test\Cogent2000v1.22\toolbox\CogSerial.dll
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+1510	[1510]	:	Cat: 1510
+6529	[5019]	:	COGENT STOP
+Cog2000 log file Fri Oct 25 17:42:16 2002
+GPrim v1.24 Compiled:Oct 24 2002 (GLib DirectDraw v7 Compiled:Oct 24 2002)
+Display:640x480x32 59.95Hz
+Attaching c:\cogent2000v1.24\toolbox\CogCapture.dll
+CogCapture v1.02 Compiled: Apr  2 2002
+Attaching c:\cogent2000v1.24\toolbox\CogSound.dll
+CogSound v1.04 Compiled: Apr  2 2002
+CogInput v1.04 Compiled: Apr  2 2002
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+17353	[17353]	:	COGENT STOP
+Cog2000 log file Fri Oct 25 17:42:40 2002
+GPrim v1.24 Compiled:Oct 24 2002 (GLib DirectDraw v7 Compiled:Oct 24 2002)
+Display:640x480x32 59.99Hz
+CogCapture v1.02 Compiled: Apr  2 2002
+CogSound v1.04 Compiled: Apr  2 2002
+CogInput v1.04 Compiled: Apr  2 2002
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+11017	[11017]	:	COGENT STOP

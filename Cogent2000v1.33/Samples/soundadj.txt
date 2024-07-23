@@ -1,0 +1,37 @@
+--------------------------------------------------------------------
+This script uses palette animation and the sound system to generate
+an animated display with interactive sounds.
+--------------------------------------------------------------------
+While the script is running you get a continuous display of
+statistics of the form:-
+
+
+soundadj vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+    Vol: 1.00  Pan: 0.00  Frq: x0.50 (750Hz)
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+
+Vol: The volume level of the sound (0 to 1)
+
+Pan: The stereo balance (-1=left only, 0=both equal, 1=right only)
+
+Frq: Frequency multiplier (x0.1 to x1 and 150Hz to 1500Hz)
+
+Use the mouse position and buttons to modify the sound.
+
+   Mouse X position = stereo balance
+   Mouse Y position = frequency multiplier
+   Mouse button R/L = volume up/down
+--------------------------------------------------------------------
+To stop the test press the Esc key
+--------------------------------------------------------------------

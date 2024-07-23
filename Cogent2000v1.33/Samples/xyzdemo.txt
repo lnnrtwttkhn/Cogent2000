@@ -1,0 +1,26 @@
+--------------------------------------------------------------------
+This script gives a realtime display of CIE colour values
+--------------------------------------------------------------------
+Pass the function a display calibration file name and the script
+will allow you to display your CIE colour selection.
+
+A CIE co-ordinate triangle appears with the monitor gamut for your
+diaplay calibration file drawn inside as another triangle.  You may
+click anywhere in the triangle to select CIE co-ordinates.  The
+program will attempt to convert your CIE values into monitor RGB
+and display the colour in the "Sample" square.  You may then check
+the accuracy of the conversion by measuring the sample colour with
+a photometer.
+
+If the conversion results in an error, that is reported. 
+--------------------------------------------------------------------
+The script takes the following arguments:-
+
+function xyzdemo(Filename)
+
+Where:-
+
+	Filename = Display calibration file name
+--------------------------------------------------------------------
+You can press 'Esc' to exit the script.
+--------------------------------------------------------------------

@@ -1,0 +1,67 @@
+--------------------------------------------------------------------
+This script checks a display calibration file 
+--------------------------------------------------------------------
+You can call this sample script in one of three ways:-
+
+1/ You pass the function the name of a display calibration file, a
+   'Levels' value and communication details for a photometer, and 
+   the script will calculate a number of XYZ values based on the
+   display calibration file.  It will then make the screen display
+   each of those 'requested' XYZ values and measure it each time 
+   using the photometer to get a 'measured' XYZ.
+
+   It then displays a graph showing the difference between 
+   'requested' and 'measured' XYZ values.
+
+   The check data is also saved in a file.
+
+   The number of XYZ values checked depends on the 'Levels' value;
+   it is equal to (Levels x Levels x Levels) - 1.  So be careful
+   how you set levels:-
+
+      Levels = 2   XYZ values = 7
+      Levels = 3   XYZ values = 26
+      Levels = 4   XYZ values = 63
+      Levels = 5   XYZ values = 124
+      Levels = 6   XYZ values = 215
+      Levels = 7   XYZ values = 342
+      Levels = 8   XYZ values = 511
+      Levels = 9   XYZ values = 728
+      Levels = 10  XYZ values = 1000
+
+2/ Instead of 'Levels', you pass the function an array of (nx3)
+   XYZ values which are then each displayed and measured with the
+   photometer.  It then displays a graph showing the difference 
+   between 'requested' and 'measured' XYZ values and the check 
+   data is also saved in a file in a similar way to option 1/ above.
+
+3/ If you pass the script the name of the file created by options 
+   1/ or 2/ above, it will display the data from that file.
+--------------------------------------------------------------------
+The graph shows a three-dimensional plot of CIE xyY values.  The 
+'requested' values are shown as '.' and the 'measured' values are 
+shown as '+'.  A line is also drawn connecting each 'requested' 
+value to the corresponding 'measured' value.  If the calibration
+and conversion functions are accurate then the lengths of these 
+connecting lines should be very small.
+
+You can rotate the three-dimensional graph using the standard
+matlab rotate function.
+
+In addition, the maximum xy deviation and the maximum deviation in 
+'Y' are also written on the graph.
+--------------------------------------------------------------------
+The script takes the following arguments:-
+
+         dspcheck(DCFname,Levels,PhotometerID,PortNum) or
+         dspcheck(DCFname,XYZ,PhotometerID,PortNum) or
+         dspcheck(DCKname)
+
+        DCFname = Display calibration file name
+         Levels = Number of levels to check
+            XYZ = Requested XYZ values
+   PhotometerID = Which photometer to use (eg. 'PR650')
+        PortNum = COM port for photometer
+        DCKname = dspcheck file name
+--------------------------------------------------------------------
+ 

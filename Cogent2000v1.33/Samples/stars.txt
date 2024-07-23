@@ -1,0 +1,48 @@
+--------------------------------------------------------------------
+This script comes in two forms:-
+
+starspal.m	uses PALETTE mode graphics.
+starsrgb.m	uses DIRECT COLOUR (RGB) mode graphics.
+--------------------------------------------------------------------
+The graphics display consists of a moving starfield.  The stars 
+change colour from yellow in the centre to magenta at the edges.
+The stars can be drawn as different objects; dots, lines, squares,
+circle outlines or filled circles.  You can change the type and 
+number of objects drawn.
+--------------------------------------------------------------------
+While the script is running you get a continuous display of
+statistics of the form:-
+
+starsXXX vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+In the section below you should substitute starspal or starsrgb 
+for stars.
+
+You may control the type and number of objects drawn using the 
+script arguments:-
+
+	stars(StarType,NumStars)
+
+StarType can take the following values:-
+
+	1 = Dots
+	2 = Lines
+	3 = Squares
+	4 = Circle outlines
+	5 = Filled circles
+
+--------------------------------------------------------------------
+To stop the test press the Esc key.
+--------------------------------------------------------------------

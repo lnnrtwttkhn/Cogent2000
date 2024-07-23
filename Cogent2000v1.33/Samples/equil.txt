@@ -1,0 +1,34 @@
+--------------------------------------------------------------------
+This script comes in two forms:-
+
+equilpal.m	uses PALETTE mode graphics.
+equilrgb.m	uses DIRECT COLOUR (RGB) mode graphics.
+
+This  script  can  be  used  to  determine  equiluminance points for 
+different colours using a flicker method.
+--------------------------------------------------------------------
+The large  upper rectangular region  flashes alternately between two
+colours named Colour 1 and Colour 2.
+
+Underneath  there  are  controls  for  colour 1  on the left and for 
+colour 2  on  the  right.   There is a square showing the colour and
+then   four   slider   controls  for  red,   green,  blue  and  grey 
+respectively.  Move the mouse into the triangle boxes and then press 
+a  mouse  button  to  increase  or decrease a colour level.  Use the
+left mouse button to change a step per click or the right button for
+continuous  change.   The big triangle changes the value in steps of
+10  and  the  small  triangle  in  steps  of  1.   Colour levels are 
+displayed  as  a  number  from  0 to  1 by default but if you select 
+'255 Mode' they are displayed as numbers  from  0  to  255.
+
+You may also change the flash period in multiples of 2 frames.  Only 
+even  periods are possible because the program displays colour 1 for 
+'n' frames and then colour 2 for 'n' frames giving a period of '2n'.
+
+You  should  aim  to  reduce the flicker to a minimum.  Sometimes it 
+helps  to  desaturate the colour by adding grey as it can be hard to
+find the equiluminance point with a highly saturated colour.
+--------------------------------------------------------------------
+To stop the script press the Esc key
+--------------------------------------------------------------------
+ 

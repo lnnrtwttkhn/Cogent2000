@@ -1,0 +1,25 @@
+--------------------------------------------------------------------
+This script checks CIE colour conversions
+--------------------------------------------------------------------
+You pass the script a set of XYZ values to generate, the name of a 
+display calibration file to use and details for communicating with
+a photometer.
+
+The script converts each XYZ value to RGB, displays the RGB value on 
+screen and then measures the XYZ value of the display.  It returns 
+an array of the measured XYZ values for comparison with the
+requested values.
+--------------------------------------------------------------------
+The script takes the following arguments:-
+
+function XYZOut = xyzcheck(XYZIn,Filename,PhotometerID,PortNum)
+
+Where:-
+
+       XYZIn = Requested XYZ values
+    Filename = display calibration file name
+PhotometerID = Which photometer to use (eg. 'PR650')
+     PortNum = COM port for photometer
+      XYZOut = measured XYZ values
+--------------------------------------------------------------------
+ 

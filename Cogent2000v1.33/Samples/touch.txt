@@ -1,0 +1,39 @@
+--------------------------------------------------------------------
+This script gives a realtime demonstration of the touchscreen
+
+A graphics screen is opened on the requested monitor and a 
+touchscreen calibration is performed.  The display then shows the 
+location and pressure of any touches by white ellipses on a black
+background.  The message "No touch" appears on the screen in the
+absence of any touches.
+--------------------------------------------------------------------
+While the script is running you also get a continuous display of
+statistics of the form:-
+
+touch vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+You may use any of the below forms of the command.  Missing values
+assume the default setting:-
+
+	touch
+	touch(Monitor)
+	touch(Monitor,Port)
+
+        Monitor = Monitor no. of touchscreen (0,1,2 etc) [def = 1]
+		Port = Serial port no. (1-8) [def = 1]
+--------------------------------------------------------------------
+You can press 'Esc' to exit the script.
+--------------------------------------------------------------------
+

@@ -1,0 +1,98 @@
+--------------------------------------------------------------------
+This script gives a realtime demonstration of the eyetracker
+--------------------------------------------------------------------
+While the script is running you see the current data received from 
+the eyetracker and the point of gaze is displayed on the screen
+with crosshairs and a circle in red.  The number of blinks is also 
+calculated and displayed.
+
+The basic screen appears as white text on a black background as 
+follows:-
+
+             Eyetracker demonstration
+
+             c1,c2,c3,c4:40,40,220,200
+                 PortNum:1
+                    Mode:1 (On Demand)
+                BaudRate:57600
+
+                  EyePos:-320,240
+                   Pupil:0
+               Timestamp:1.634
+                  Status:0
+
+                  Blinks:0
+
+   'Esc' for exit, 'C' for calibrate or 'R' to reset
+
+The setup parameters for the eyetracker are shown first:-
+
+             c1,c2,c3,c4:40,40,220,200
+                 PortNum:1
+                    Mode:1 (On Demand)
+                BaudRate:57600
+
+Followed by the returned eye data:-
+
+                  EyePos:-320,240
+                   Pupil:0
+               Timestamp:1.634
+                  Status:0
+
+And then the blink count:-
+
+                  Blinks:0
+
+If there is valid eyedata, crosshairs and a central spot in red
+mark the current point of gaze, otherwise the words 'No eye data'
+appear in red under the 'Blinks' count.
+--------------------------------------------------------------------
+While the script is running you also get a continuous display of
+statistics of the form:-
+
+tracker vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+The script takes the following arguments:-
+
+function tracker(c1,c2,c3,c4,PortNum,Mode,BaudRate)
+
+Where:-
+
+    c1,c2,c3,c4 = Calibration co-ordinates c3 > c1, c4 > c2.
+		  Default values are 40,40,220,200
+
+        PortNum = Serial port (COM port) number 1 to 8
+                  Default value is 1
+
+           Mode = Eyetracker mode 1=On Demand, 0=Continuous
+                  Default value is 1 (On Demand)
+
+       BaudRate = Serial port baud rate 9600/19200/38400/57600
+                  Default value is 57600
+
+You may use any of the below forms of the command.  Missing values
+assume the default setting:-
+
+	tracker
+	tracker(c1,c2,c3,c4)
+	tracker(c1,c2,c3,c4,PortNum)
+	tracker(c1,c2,c3,c4,PortNum,Mode)
+	tracker(c1,c2,c3,c4,PortNum,Mode,BaudRate)
+--------------------------------------------------------------------
+You can press 'C' to display the eyetracker calibration screen.
+You can press 'R' to reset the number of blinks and the timer to 0.
+You can press 'Esc' to exit the script.
+--------------------------------------------------------------------
+ 
