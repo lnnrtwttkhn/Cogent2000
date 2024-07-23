@@ -1,0 +1,48 @@
+--------------------------------------------------------------------
+This script gives a realtime demonstration of alpha-blending
+--------------------------------------------------------------------
+The graphics display consists of seven coloured circles bouncing 
+around the screen in different directions and at different speeds.
+The circles differ in size also on a continuous scale:-
+
+Circle 1 white (largest and slowest)
+Circle 2 cyan
+Circle 3 magenta
+Circle 4 blue
+Circle 5 yellow
+Circle 6 green
+Circle 7 red (smallest and fastest)
+--------------------------------------------------------------------
+While the script is running you get a continuous display of
+statistics of the form:-
+
+alpha vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+You may control the bit-depth of the display using the 'Bits' 
+argument:-
+
+	alpha(Bits)
+
+	Bits = 16, 24 or 32
+	
+The default value when the command alpha is used alone correspond 
+to:-
+
+	alpha(0)
+
+This opens a screen with the largest valid bit-depth.
+--------------------------------------------------------------------
+To stop the test press the Esc key.
+--------------------------------------------------------------------

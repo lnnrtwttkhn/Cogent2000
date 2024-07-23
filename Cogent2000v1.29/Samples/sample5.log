@@ -1,0 +1,34 @@
+Cog2000 log file Mon May 13 10:46:42 2002
+GPrim v1.22 Compiled:Apr 30 2002 (GLib DirectDraw v7 Compiled:Apr 30 2002)
+Display:640x480x24 60.02Hz
+0	[0]	:	COGENT START
+1030	[1030]	:	ONE
+1035	[5]	:	1
+1038	[3]	:	1030
+3046	[2008]	:	TWO
+3051	[5]	:	2
+3053	[2]	:	3046
+6360	[3307]	:	COGENT STOP
+Cog2000 log file Mon May 13 10:50:27 2002
+GPrim v1.22 Compiled:Apr 30 2002 (GLib DirectDraw v7 Compiled:Apr 30 2002)
+Display:640x480x24 60.02Hz
+0	[0]	:	COGENT START
+1030	[1030]	:	ONE
+1035	[5]	:	1
+1038	[3]	:	1030
+3031	[1993]	:	TWO
+3035	[4]	:	2
+3038	[3]	:	3030
+5046	[2008]	:	THREE
+5051	[5]	:	1
+5053	[2]	:	5046
+7063	[2010]	:	FOUR
+7068	[5]	:	2
+7070	[2]	:	7063
+9079	[2009]	:	FIVE
+9083	[4]	:	1
+9086	[3]	:	9079
+11095	[2009]	:	SIX
+11099	[4]	:	2
+11102	[3]	:	11095
+22696	[11594]	:	COGENT STOP

@@ -1,0 +1,43 @@
+--------------------------------------------------------------------
+This script can be used to test cogent graphics performance.
+--------------------------------------------------------------------
+When  you  run the script the screen goes black and four speed tests
+are  carried  out; dots, lines, rectangles and ellipses.  These four
+tests  are  repeated  for  8, 16, 24 and 32 bit graphics.  The whole 
+test  sequence should take no more than 5 minutes.  During this time
+some messages may appear on-screen as graphics screens are opened.
+You  may  also see the line "Number of array elements exceeds 16384"
+which  is  produced  while  testing  whether Student Matlab is being 
+used.
+
+The  output  from  the script then appears on the screen and is also
+saved in a file named 'perfdata.txt' which you may choose to print.
+
+The first lines of output give the time of the test and identify the
+test program and machine ID of the PC as shown below:-
+
+   perftest v1.01 17-Jul-2001
+   Machine:mustard00 128.40.206.2
+   GPrim v1.17 Compiled:Jul 17 2001
+   GLib DirectDraw v7 Compiled:Jul 17 2001
+   Display 640x480 85.40Hz
+
+Then  for  each of the graphics modes (8, 16, 24 and 32 bit) you get
+lines as follows:-
+
+      Cogent 2000 perfomance test (32 bit graphics)
+       Dots per second:126448   StdErr:87      
+      Lines per second:32447    StdErr:31      
+      Rects per second:60442    StdErr:999     
+   Ellipses per second:9941     StdErr:3       
+
+This gives the number of graphics objects drawn per second for dots,
+lines,  rectangles and ellipses as well as a measure of the standard
+error  in  each measurement.  The variation in these measurements is
+due  to  disk  activity, virtual memory operations and task swapping
+which are part of the normal running of the operating system.
+--------------------------------------------------------------------
+Once  started  you should let the script complete.  If necessary you
+can  halt  it  with a 'Ctrl + C' folowed by 'Alt + Tab'.
+--------------------------------------------------------------------
+ 

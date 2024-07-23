@@ -1,0 +1,42 @@
+--------------------------------------------------------------------
+This script comes in two forms:-
+
+tennispal.m	uses PALETTE mode graphics.
+tennisrgb.m	uses DIRECT COLOUR (RGB) mode graphics.
+--------------------------------------------------------------------
+The graphics display is a simple tennis game controlled by the 
+mouse.
+--------------------------------------------------------------------
+While the script is running you get a continuous display of
+statistics of the form:-
+
+tennisXXX vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+In the section below you should substitute tennispal or tennisrgb 
+for Stars.
+
+You may control the difficulty of the game using the script 
+arguments:-
+
+	tennis(BatLength,BallSize)
+
+BatLength sets the bat size from 1 to 150 pixels
+BallSize sets the ball size from 1 to 150 pixels
+
+--------------------------------------------------------------------
+You get the option of quitting the script each time you start a new
+game
+--------------------------------------------------------------------
+ 

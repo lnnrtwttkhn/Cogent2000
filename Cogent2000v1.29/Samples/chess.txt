@@ -1,0 +1,75 @@
+--------------------------------------------------------------------
+This script comes in two forms:-
+
+chesspal.m	uses PALETTE mode graphics.
+chessrgb.m	uses DIRECT COLOUR (RGB) mode graphics.
+--------------------------------------------------------------------
+The graphics display consists of a black and white chessboard where
+the black and white squares regularly invert colour.
+--------------------------------------------------------------------
+While the script is running you get a continuous display of
+statistics of the form:-
+
+ChessXXX vn.nn P:NORMAL Tim:00:00:07 Frm:606 Av:85.44Hz Drp:0
+
+These values represent:-
+
+  P: The priority class in which the script is running
+
+Tim: The time in hours, minutes and seconds since the test started.
+
+Frm: The number of display frames drawn since the start of the test.
+
+ Av: The average frame rate in hertz since the start of the test.
+
+Drp: The number of times that the display has missed a frame.
+--------------------------------------------------------------------
+In the section below you should substitute chesspal or chessrgb for
+chess.
+
+You may control the overall size and dimensions of the chessboard 
+squares and the rate of black/white colour inversion of the 
+chessboard using the script arguments:-
+
+	chess(SqrWid,SqrHgh,Frm,GMode)
+
+SqrWid = width of each chessboard 'square'
+
+SqrHgh = height of each chessboard 'square'
+
+Frm = time period in frames for black/white colour inversion.
+
+The GMode argument controls the size of the display screen...
+
+	GMode = 1 or -1 = 640 x 480 pixels
+	GMode = 2 or -2 = 800 x 600 pixels
+	GMode = 3 or -3 = 1024 x 768 pixels
+	GMode = 4 or -4 = 1152 x 864 pixels
+	GMode = 5 or -5 = 1280 x 1024 pixels
+	GMode = 6 or -6 = 1600 x 1200 pixels
+
+If you use a negative value for GMode the display opens in a sub-
+window on the desktop rather than taking over the whole screen.
+
+The default values when the command chess is used alone correspond 
+to:-
+
+	chess(8,8,1,1) - i.e. SqrWid = 8, SqrHgh = 8, Frm = 1,
+                              GMode = 1
+
+You may specify the following:-
+
+	chess
+	chess(SqrSiz)
+	chess(SqrWid,SqrHgh)
+	chess(SqrWid,SqrHgh,Frm)
+	chess(SqrWid,SqrHgh,Frm,GMode)
+
+Any unspecified quantities take the default values.
+
+Note that in the form chess(SqrSiz), both SqrWid and SqrHgh take 
+on the value of SqrSiz.
+--------------------------------------------------------------------
+To stop the test press the Esc key.
+--------------------------------------------------------------------
+ 

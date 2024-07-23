@@ -1,6 +1,9 @@
 # Cogent 2000
 
 The purpose of this repository is to distribute the Cogent 2000 Graphics toolbox.
+The following versions are available:
+
+- `Cogent2000v1.29`
 
 ## Terms and conditions (copied from the GScnd v1.29 User Manual)
 

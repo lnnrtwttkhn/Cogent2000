@@ -1,0 +1,98 @@
+Cog2000 log file Fri Oct 25 17:42:57 2002
+GPrim v1.24 Compiled:Oct 24 2002 (GLib DirectDraw v7 Compiled:Oct 24 2002)
+Display:640x480x32 59.95Hz
+CogCapture v1.02 Compiled: Apr  2 2002
+CogSound v1.04 Compiled: Apr  2 2002
+CogInput v1.04 Compiled: Apr  2 2002
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+1544	[1544]	:	1543
+6612	[5068]	:	6612
+11681	[5069]	:	11681
+16750	[5069]	:	16749
+21819	[5069]	:	21819
+23819	[2000]	:	Key	6	DOWN	at	22413   
+23819	[0]	:	Key	6	UP	at	22601   
+26888	[3069]	:	26887
+28887	[1999]	:	Key	6	DOWN	at	27225   
+28888	[1]	:	Key	6	UP	at	27535   
+31956	[3068]	:	31956
+33956	[2000]	:	Key	8	DOWN	at	32258   
+33957	[1]	:	Key	8	UP	at	32633   
+37025	[3068]	:	37025
+39025	[2000]	:	Key	20	DOWN	at	37332   
+39026	[1]	:	Key	20	UP	at	37649   
+42094	[3068]	:	42093
+44093	[1999]	:	Key	4	DOWN	at	43303   
+44094	[1]	:	Key	4	UP	at	43742   
+47162	[3068]	:	47162
+52232	[5070]	:	52231
+57300	[5068]	:	57300
+60834	[3534]	:	COGENT STOP
+Cog2000 log file Fri Oct 25 17:47:30 2002
+GPrim v1.24 Compiled:Oct 24 2002 (GLib DirectDraw v7 Compiled:Oct 24 2002)
+Display:640x480x32 59.95Hz
+CogCapture v1.02 Compiled: Apr  2 2002
+CogSound v1.04 Compiled: Apr  2 2002
+CogInput v1.04 Compiled: Apr  2 2002
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+1537	[1537]	:	1536
+6606	[5069]	:	6606
+8606	[2000]	:	Key	16	DOWN	at	6968    
+8607	[1]	:	Key	16	UP	at	7308    
+11675	[3068]	:	11674
+16743	[5068]	:	16743
+18743	[2000]	:	Key	17	DOWN	at	17017   
+18744	[1]	:	Key	17	UP	at	17363   
+21813	[3069]	:	21812
+23812	[1999]	:	Key	17	DOWN	at	22062   
+23813	[1]	:	Key	17	UP	at	22437   
+26881	[3068]	:	26881
+31949	[5068]	:	31949
+33949	[2000]	:	Key	17	DOWN	at	32234   
+33949	[0]	:	Key	17	UP	at	32549   
+37019	[3070]	:	37018
+39018	[1999]	:	Key	17	DOWN	at	37331   
+39019	[1]	:	Key	17	UP	at	37613   
+42087	[3068]	:	42087
+44087	[2000]	:	Key	17	DOWN	at	42488   
+44088	[1]	:	Key	17	UP	at	42734   
+47157	[3069]	:	47156
+49156	[1999]	:	Key	17	DOWN	at	47538   
+49157	[1]	:	Key	17	UP	at	47843   
+52225	[3068]	:	52225
+54225	[2000]	:	Key	17	DOWN	at	52531   
+54226	[1]	:	Key	17	UP	at	52794   
+57294	[3068]	:	57293
+59293	[1999]	:	Key	17	DOWN	at	57564   
+59294	[1]	:	Key	17	UP	at	57833   
+60827	[1533]	:	COGENT STOP
+Cog2000 log file Fri Oct 25 17:52:41 2002
+GPrim v1.24 Compiled:Oct 24 2002 (GLib DirectDraw v7 Compiled:Oct 24 2002)
+ERR GPrim:ginit cannot set display mode (DDERR_UNSUPPORTED)
+ERR GPrim:gDrawCol ginit not called
+ERR GPrim:gSetRAS ginit not called
+ERR GPrim:gFillRect ginit not called
+ERR GPrim:gFlip ginit not called
+ERR GPrim:gDrawCol ginit not called
+ERR GPrim:gAddRAS ginit not called
+ERR GPrim:gAddRAS ginit not called
+ERR GPrim:gAddRAS ginit not called
+ERR GPrim:gAddRAS ginit not called
+ERR GPrim:gDrawCol ginit not called
+ERR GPrim:gFont ginit not called
+CogCapture v1.02 Compiled: Apr  2 2002
+CogSound v1.04 Compiled: Apr  2 2002
+CogInput v1.04 Compiled: Apr  2 2002
+CogSerial v1.01 Compiled: Apr  2 2002
+0	[0]	:	COGENT START
+ERR GPrim:gAddDIBArray ginit not called
+ERR GPrim:gAddDIBArray ginit not called
+ERR GScnd:cgDrawSprite Unable to find Key 1
+ERR GPrim:gFlip ginit not called
+Detaching c:\cogent2000v1.24\toolbox\CogSound.dll
+Detaching c:\cogent2000v1.24\toolbox\CogCapture.dll
+Detaching c:\cogent2000v1.24\toolbox\CogSerial.dll
+Detaching c:\cogent2000v1.24\toolbox\CogInput.dll
+Detaching c:\cogent2000v1.24\toolbox\CogProcess.dll
